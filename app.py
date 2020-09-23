@@ -1,5 +1,7 @@
 import os
 from flask import Flask, render_template
+from flask_pymongo import flask_pymongo
+from bson.objectid import objectid
 
 app = Flask(__name__)
 
@@ -11,11 +13,11 @@ def index():
 
 @app.route("/create")
 def create():
-    return render_template("create.html")
+    return render_template("create.html", page_title="Create")
 
 @app.route("/browse")
 def browse():
-    return render_template("browse.html")
+    return render_template("browse.html", page_title="Browse")
 
 
 if __name__ == '__main__':
