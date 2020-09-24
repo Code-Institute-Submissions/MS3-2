@@ -12,7 +12,7 @@ def index():
   return render_template("index.html")
 
 
-@app.route("/create", methods=['get','post'])
+@app.route("/submit", methods=['get','post'])
 def create():
   #  book_name = request.form["book_name"]
   #  author_name = request.form["author_name"]
@@ -20,14 +20,14 @@ def create():
   #  added_by = request.form["added_by"]
   #  review= request.form["review"]
   #  print (book_name, review)
-    return render_template("create.html", page_title="Create")
+    return render_template("submit.html", page_title="Submit")
    
 
 
 
  #@app.route('/accept_data', methods=['post'])
 #def accept_data():
- # path = request.form["{{ url_for('create.html') }}"]
+ # path = request.form["{{ url_for('submit.html') }}"]
 
 @app.route("/browse")
 def browse():
