@@ -5,15 +5,13 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 
-
-
 @app.route("/")
 def index():
   return render_template("index.html")
 
 
 @app.route("/submit", methods=['get','post'])
-def create():
+def submit():
   #  book_name = request.form["book_name"]
   #  author_name = request.form["author_name"]
   #  genre = request.form["genre"]
