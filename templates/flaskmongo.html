@@ -1,0 +1,16 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+    <h3>Test</h3>
+        {% for book in books %}
+            {{book.book_name}}
+            {{book.author_name}}
+            {{book.genre}}
+            {{book.summary}}
+            {{book.added_by}}
+        {% endfor %}
+    </body>
+</html>

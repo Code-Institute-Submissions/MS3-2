@@ -3,8 +3,21 @@ from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 
+from os import path
+if path.exists("env.py"):
+  import env
+
 
 app = Flask(__name__)
+app.config["MONGO_DBNAME"] = 'user_uploads'
+app.config["MONGO_URI"] = os.getenv('MONGO_URI')
+
+
+
+#os.getenv('MONGO_URI', 'mongodb://localhost')
+
+
+mongo = PyMongo(app)
 
 
 
@@ -13,14 +26,21 @@ def index():
   return render_template("index.html")
 
 
-@app.route("/submit", methods=['get','post'])
+@app.route("/flaskmongo")
+def flaskmongo():
+    return render_template("flaskmongo.html", books=mongo.db.books.find())
+
+
+
+@app.route("/submit", methods=['GET', 'POST'])
 def submit():
-  #  book_name = request.form["book_name"]
-  #  author_name = request.form["author_name"]
-  #  genre = request.form["genre"]
-  #  added_by = request.form["added_by"]
-  #  review= request.form["review"]
-  #  print (book_name, review)
+    if request.method == 'POST':
+        book_name = request.form["book_name"]
+        author_name = request.form["author_name"]
+       # genre = request.form["genre"]
+        summary = request.form["summary"]
+        added_by = request.form["added_by"]
+        print (book_name, author_name, summary, added_by)
     return render_template("submit.html", page_title="Submit")
    
 
