@@ -12,11 +12,6 @@ app = Flask(__name__)
 app.config["MONGO_DBNAME"] = 'user_uploads'
 app.config["MONGO_URI"] = os.getenv('MONGO_URI')
 
-
-
-#os.getenv('MONGO_URI', 'mongodb://localhost')
-
-
 mongo = PyMongo(app)
 
 
@@ -37,10 +32,10 @@ def submit():
     if request.method == 'POST':
         book_name = request.form["book_name"]
         author_name = request.form["author_name"]
-       # genre = request.form["genre"]
+        genre = request.form["genre"]
         summary = request.form["summary"]
         added_by = request.form["added_by"]
-        print (book_name, author_name, summary, added_by)
+        print (book_name, author_name, genre, summary, added_by)
     return render_template("submit.html", page_title="Submit")
    
 

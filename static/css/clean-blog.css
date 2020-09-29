@@ -1,3 +1,21 @@
+/* Customised CSS */
+
+
+
+.images-home {
+    border: 1px solid red;
+}
+
+
+#philosophy {
+    color: red;
+    background-color: blue;
+}
+
+
+
+
+
 /*!
  * Start Bootstrap - Clean Blog v5.0.9 (https://startbootstrap.com/themes/clean-blog)
  * Copyright 2013-2020 Start Bootstrap
@@ -406,9 +424,4 @@ footer .copyright {
 .btn-lg {
   font-size: 16px;
   padding: 25px 35px;
-}
-
-
-.images-home {
-    border: 1px solid red;
 }
