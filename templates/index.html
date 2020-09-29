@@ -6,44 +6,37 @@
  <div class="row">
  <div class="col">
  <h3 class="text-center" id="philosophy">Philosophy</h3>
-  <p class="text-center ">It's not about the amount of books you read, but rather the lessons you learn from the books you read.<br>
-  Minimalist Reading is a collection of the most influential books as chosen by the users of the site</p>
+  <p class="text-center ">It's not about the amount of books you read, but rather the lessons you learn from the books you read.</p>
  
  </div>
  </div>
 
- <div class="row">
- <h3>How It Works</h3>
- </div>
- 
 
- 
 
-<div class="row">
-<div class="col">
+<!--   Card Deck -->
 
- <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="static/img/small-typewriter.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h3 class="card-text"><a href="{{ url_for('submit') }}">Submit</a></h3>
-    <p class="card-text">Enter the details of <em>'the book'</em> you would take with you to a desert island, the book that has had the biggest impact on your life</p>
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="static/img/small-girl-with-book.jpg" alt="girl holding book">
+    <div class="card-body">
+      <h5 class="card-title">About</h5>
+      <p class="card-text">Minimalist Reading is a collection of the most influential books as chosen by the users of the site</p>
+    </div>
   </div>
-</div>
-
-</div>
- 
- <div class="col">
- <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="static/img/small-library.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h3 class="card-text"><a href="{{ url_for('browse') }}">Browse</a></h3>
-    <p class="card-text">Browse through the other user's uploads to find ideas for the next book you should read</p>
+  <div class="card">
+    <img class="card-img-top" src="static/img/small-typewriter.jpg" alt="small typewriter">
+    <div class="card-body">
+      <h5 class="card-title"><a href="{{ url_for('submit') }}">Submit</a></h5>
+        <p class="card-text">Enter the details of <em>'the book'</em> you would take with you to a desert island, the book that has had the biggest impact on your life</p>
+    </div>
   </div>
-</div>
- </div>
-
-
-
+  <div class="card">
+    <img class="card-img-top" src="static/img/small-library.jpg" alt="library">
+    <div class="card-body">
+      <h5 class="card-title"><a href="{{ url_for('browse') }}">Browse</a></h5>
+      <p class="card-text">Browse through the other user's uploads to find ideas for the next book you should read</p>
+    </div>
+  </div>
 </div>
 
 
