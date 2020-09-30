@@ -1,11 +1,20 @@
 /* Customised CSS */
 
 
+@media screen and (max-width: 768px) and (min-width: 480px){
+    .images-home {
+     color: red;
+     display: block;
+   }  
+}
+ 
 
- /*.images-home {
-    max-height: 40%;
-   }  */
-
+@media screen and (max-width: 768px) and (min-width: 480px) {
+    .index-card {
+        max-height: 50%;
+        color: green;
+    }
+}
 
 
 

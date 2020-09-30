@@ -1,7 +1,11 @@
-[View the website here](https://minimalist-reading-ms3.herokuapp.com)
+## introduction
 
-This links to the main homepage for the Minimalist Reading web application. 
-It is designed to be responsive and accessible on a range of devices, making it easy to navigate for potential users.
+Minimalist Reading is a web application created for my Milestone Project Three at the Code Institute.
+The project was inspired by an article posted on['The School Of Life'](https://www.theschooloflife.com/thebookoflife/how-to-read-fewer-books/)
+
+
+Minimalist Reading is designed to be a responsive and accessible web application , making it easy to navigate for potential users on a range of devices.
+[View the website here](https://minimalist-reading-ms3.herokuapp.com)
 
 
 ## User Experience (UX)
@@ -35,7 +39,9 @@ It is designed to be responsive and accessible on a range of devices, making it 
 
     -   Mobile Wireframe - [View](https://github.com/)
 
-    -   Contact Us Page Wireframe - [View](https://github.com/)
+    -   Submit Page Wireframe - [View](https://github.com/)
+
+    -   Browse Page Wireframe - [View](https://github.com/)
 
 ## Features
 
@@ -43,40 +49,20 @@ It is designed to be responsive and accessible on a range of devices, making it 
 
 -   Interactive elements
 
+
 ## Technologies Used
 
-### Languages Used
-
--   [HTML5](https://en.wikipedia.org/wiki/HTML5)
--   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
-
-### Frameworks, Libraries & Programs Used
-
-1. [Bootstrap 4.4.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
-    - Bootstrap was used to assist with the responsiveness and styling of the website.
-1. [Hover.css:](https://ianlunn.github.io/Hover/)
-    - Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
-1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
-1. [Font Awesome:](https://fontawesome.com/)
-    - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
-1. [jQuery:](https://jquery.com/)
-    - jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
-1. [Git](https://git-scm.com/)
-    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-1. [GitHub:](https://github.com/)
-    - GitHub is used to store the projects code after being pushed from Git.
-1. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
-    - Photoshop was used to create the logo, resizing images and editing photos for the website.
-1. [Balsamiq:](https://balsamiq.com/)
-    - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
+- Frontend: HTML, CSS, JavaScript, Bootstrap, Photoshop, Logomakr.com, GoogleFonts, FontAwesome
+- Backend: Python, Flask, MongoDB
+- Hosting: Heroku
+- Database: MongoDB
 
 ## Testing
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
 
 ### Testing User Stories from User Experience (UX) Section
 
