@@ -1,26 +1,16 @@
-/* Customised CSS */
+/* Styling was created by importing a theme from StartBootstrap.com and customising where necessary*/
+
+
 
 
 @media screen and (max-width: 768px) and (min-width: 480px){
     .images-home {
-     color: red;
      display: block;
    }  
 }
+
+
  
-
-@media screen and (max-width: 768px) and (min-width: 480px) {
-    .index-card {
-        max-height: 50%;
-        color: green;
-    }
-}
-
-
-
-
-
-
 /*!
  * Start Bootstrap - Clean Blog v5.0.9 (https://startbootstrap.com/themes/clean-blog)
  * Copyright 2013-2020 Start Bootstrap
@@ -430,3 +420,5 @@ footer .copyright {
   font-size: 16px;
   padding: 25px 35px;
 }
+
+

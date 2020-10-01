@@ -1,4 +1,4 @@
-## introduction
+## Introduction
 
 Minimalist Reading is a web application created for my Milestone Project Three at the Code Institute.
 The project was inspired by an article posted on['The School Of Life'](https://www.theschooloflife.com/thebookoflife/how-to-read-fewer-books/)
@@ -23,6 +23,10 @@ Minimalist Reading is designed to be a responsive and accessible web application
         1. As a Returning User, I want to check to see if there are any newly added book recommendations.
         2. As a Returning User, I want to check to see if there are any newly added features to the site.
 
+     -   #### Site Owner Goals
+        
+        1. Earn money on each book purchased via a link from the site.
+
 -   ### Design
     -   #### Colour Scheme
         -   The two main colours used throughout the site are white, grey and black.
@@ -31,7 +35,7 @@ Minimalist Reading is designed to be a responsive and accessible web application
         -   ????????????????????????
     -   #### Imagery
         -   The main image for the site is a large,background hero image.
-        -   The image of a girl reading a book with a sunset backdrop is designed to reflect the minimalist aesthetic which ties in with -   the purpose of the site.
+        -   The image of a girl reading a book with a sunset backdrop is designed to reflect the minimalist aesthetic which ties in with -      the purpose of the site.
 
 *   ### Wireframes
 
@@ -52,25 +56,28 @@ Minimalist Reading is designed to be a responsive and accessible web application
 
 ## Technologies Used
 
-- Frontend: HTML, CSS, JavaScript, Bootstrap, Photoshop, Logomakr.com, GoogleFonts, FontAwesome
-- Backend: Python, Flask, MongoDB
-- Hosting: Heroku
+- Design: Photoshop, Logomakr.com, GoogleFonts, FontAwesome
+- Frontend: HTML, CSS, JavaScript, Bootstrap, 
+- Backend: Python, Flask, Jinja, 
 - Database: MongoDB
+- Hosting: Heroku
 
 ## Testing
 
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
+### Code Validation
+
+- I used the [W3C HTML Validator tool](https://validator.w3.org/#validate_by_input) to validate my HTML code.
+- I used the [W3C CSS Validator tool](https://jigsaw.w3.org/css-validator/#validate_by_input) to validate my CSS code.
+- I used the [Pep8 Online tool](http://pep8online.com/) to validate my Python syntax.
 
 ### Testing User Stories from User Experience (UX) Section
 
 -   #### First Time Visitor Goals
 
-    1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
+    1. As a First Time Visitor, I want to easily understand the main purpose of the site.
 
-        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with Text and a "Learn More" Call to action button.
+        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with Text.
         2. The main points are made immediately with the hero image
         3. The user has two options, click the call to action buttons or scroll down, both of which will lead to the same place, to learn more about the organisation.
 
@@ -120,18 +127,29 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
         2. To the right hand side of the footer the user can see "Subscribe to our Newsletter" and are prompted to Enter their email address.
         3. There is a "Submit" button to the right hand side of the input field which is located close to the field and can easily be distinguished.
 
+
+### Features Left to Implement
+
+ # Login System
+- A User Login System would open up the possibility of users being able to login and edit their uploads.
+
+ # Chart System
+- When enough users have submitted books to the site I would like to implement a chart system recording the most popular books using    Javascript.  This would enhance the user experience and make the site more useful.
+
+ # Upload Image
+- Providing the possibility to upload an image of the book cover would make the site more visually appealing.
+
+
 ### Further Testing
 
 -   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
 -   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
 -   A large amount of testing was done to ensure that all pages were linking correctly.
--   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+-   Friends and family members were asked to review the site to point out any bugs and/or user experience issues.
 
 ### Known Bugs
 
--   On some mobile devices the Hero Image pushes the size of screen out more than any of the other content on the page.
-    -   A white gap can be seen to the right of the footer and navigation bar as a result.
--   On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them.
+-   Hamburger icon in Navbar stretches over Hero Image on small screens.
 
 ## Deployment
 
@@ -185,24 +203,24 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
--   The full-screen hero image code came from this [StackOverflow post](https://stackoverflow.com)
+-   [Start Bootstrap](https://startbootstrap.com/) was used to provide a structure for the website so as to be able to quickly focus on the site's functionality and backend code.
 
 -   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
 
--   [MDN Web Docs](https://developer.mozilla.org/) : For Pattern Validation code. Code was modified to better fit my needs and to match an Irish phone number layout to ensure correct validation. Tutorial Found [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel#Pattern_validation)
 
 ### Content
 
 -   All content was written by the developer.
 
--   Psychological properties of colours text in the README.md was found [here](http://www.colour-affects.co.uk/psychological-properties-of-colours)
+-   Format of README.md followed *[this](https://github.com/Code-Institute-Solutions/SampleREADME#code-institute-website)* example.
 
 ### Media
 
--   All Images were created by the developer.
+-   All Images used in the site were taken from [Pexels](https://www.pexels.com/).
+-   Favicon created at [Logomakr](https://logomakr.com/).
 
 ### Acknowledgements
 
--   My Mentor for continuous helpful feedback.
+-   My Mentor Aaoron Sinnott for helpful feedback and advice on what features to include.
 
 -   Tutor support at Code Institute for their support.

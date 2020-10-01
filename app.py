@@ -3,7 +3,7 @@ from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 if os.path.exists("env.py"):
-  import env
+    import env
 
 
 app = Flask(__name__)
@@ -16,6 +16,10 @@ mongo = PyMongo(app)
 @app.route("/")
 def index():
     return render_template("index.html")
+
+@app.route("/about")
+def about():
+    return render_template("about.html")
 
 
 @app.route("/submit")
@@ -33,7 +37,7 @@ def insert_book():
 @app.route("/browse")
 def browse():
     return render_template("browse.html", page_title="Browse",
-    books=mongo.db.books.find())
+                           books=mongo.db.books.find())
 
 
 if __name__ == '__main__':
