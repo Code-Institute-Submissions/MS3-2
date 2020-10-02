@@ -1,19 +1,14 @@
 {% extends 'base.html' %}
 {% block tab_title  %}About{% endblock %}
 {% block content  %}
-
 <h2 class="text-center">{{ page_title }}</h2>
-
- 
 <div class="container">
- <p class="text-center">Minimalist Reading was inspired by an article entitled <a href="https://www.theschooloflife.com/thebookoflife/how-to-read-fewer-books"><em>'How To Read Fewer Books</em></a> posted by 'The School Of Life'.</p>
+   <p class="text-center">Minimalist Reading was inspired by an article entitled <a href="https://www.theschooloflife.com/thebookoflife/how-to-read-fewer-books"><em>'How To Read Fewer Books</em></a> posted by 'The School Of Life'.</p>
 </div>
- 
- <div class="container">
- <div class="jumbotron">
- <p class="text-center">1. To use the site simply <a href="{{ url_for('submit') }}">submit</a> your favourite book.<br>
- 2. Then <a href="{{ url_for('browse') }}">browse</a> through other users' favourites to find your next read.</p>
- </div>
- </div>
-
+<div class="container">
+   <div class="jumbotron">
+      <p class="text-center my-5">1. To use the site simply <a href="{{ url_for('submit') }}">submit</a> your favourite book.</p>
+      <p> 2. Then <a href="{{ url_for('browse') }}">browse</a> through other users' favourites to find your next read.</p>
+   </div>
+</div>
 {% endblock %}
