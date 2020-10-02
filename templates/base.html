@@ -6,11 +6,11 @@
       <!-- Compiled and minified CSS -->
       <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
       <!-- Start Bootstrap + Customised CSS File-->
-      <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}" type ="text/css">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/clean-blog.css')}}" type ="text/css">
       <!-- Fontawesome -->
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
       <link rel="shortcut icon" type="image/png" href="static/img/favicon.png">
-      <title>{% block title %} {{ block_title}} {% endblock %}</title>
+      <title>{% block tab_title %} {%endblock%}</title>
    </head>
    <body>
       <!-- base.html is the template which will be injected into all subsequent pages on the site-->
