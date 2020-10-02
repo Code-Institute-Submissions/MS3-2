@@ -19,16 +19,13 @@ mongo = PyMongo(app)
 @app.route('/')
 def index():
     """ index() renders our "index.html" homepage """
-    return render_template("index.html")
+    return render_template("index.html", block_title="Home")
 
 
 @app.route('/about')
 def about():
     """ about() renders our "about.html" page """
     return render_template("about.html", page_title="About")
-
-
-""" submit() renders our "submit.html" page """
 
 
 @app.route('/submit')
@@ -68,7 +65,7 @@ def edit_book(book_id):
     """
     the_book = mongo.db.books.find_one({"_id": ObjectId(book_id)})
     all_genres = mongo.db.genres.find()
-    return render_template('editbook.html', book=the_book, genre=all_genres)
+    return render_template('editbook.html', book=the_book, genres=all_genres)
 
 
 @app.route('/delete_book/<book_id>')
@@ -83,4 +80,4 @@ if __name__ == '__main__':
     """ Setting up our IP Address and Port number """
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
-            debug=True)
+            debug=False)

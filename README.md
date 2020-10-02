@@ -35,7 +35,7 @@ Click the link below to run my project in the live environment:
 
         1. As a Returning User, I want to check to see if there are any newly added book recommendations.
         2. As a Returning User, I want to check to see if there are any newly added features to the site.
-        3.  edit delete
+        3. As a Returning User, I want to be able to edit and delete my submission.
 
      -   #### Site Owner Goals
         
@@ -65,13 +65,11 @@ Click the link below to run my project in the live environment:
 
 ## Features
 
--   Responsive on all device sizes
+-   Responsive on all device sizes.
 
--   submit
+-   Submit, Edit and Delete operations to manage book recommendations.
 
-- add/edit delete
-
--   about
+-   About page with link to article which inspired the project plus clear instructions on how to proceed.
 
 ### Future Features 
 
@@ -103,6 +101,7 @@ Click the link below to run my project in the live environment:
 - I used the [W3C HTML Validator tool](https://validator.w3.org/#validate_by_input) to validate my HTML code.
 - I used the [W3C CSS Validator tool](https://jigsaw.w3.org/css-validator/#validate_by_input) to validate my CSS code.
 - I used the [Pep8 Online tool](http://pep8online.com/) to validate my Python syntax.
+- [view](https://github.com/jmurrii/MS3/blob/master/documentation/PEP8%20Validation.png)
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -190,6 +189,9 @@ Click the link below to run my project in the live environment:
 
 ### Forking the GitHub Repository
 
+#### Note:
+- For Secret Key contact me @ jonmurrii@gmail.com
+
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
@@ -226,7 +228,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
--   [Start Bootstrap](https://startbootstrap.com/) was used to provide a structure for the website so as to be able to quickly focus on the site's functionality and backend code.
+-   [Start Bootstrap](https://startbootstrap.com/) Clean Blog Theme was used to provide a structure for the website so as to be able to quickly focus on the site's functionality and backend code.
 
 -   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
 
