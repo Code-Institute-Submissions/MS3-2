@@ -14,16 +14,11 @@
       </div>
       <div class="form-group">
          <label for="genre">Genre </label> 
-         <select type="text" name="genre" id="genre" class="form-control" placeholder="Choose Genre">
-            <option value="choose_genre" selected disabled>Choose Genre</option>
-            <option value="poetry">Poetry</option>
-            <option value="fiction">Fiction</option>
-            <option value="fantasy">Fantasy</option>
-            <option value="sci_fi">Science Fiction</option>
-            <option value="biography">Biography</option>
-            <option value="self_help">Self-Help</option>
-            <option value="drama">Drama</option>
-            <option value="non_fiction">Non-Fiction</option>
+         <select type="text" name="genre_name" id="genre" class="form-control" placeholder="Choose Genre">
+            <option value="" selected disabled>Choose Genre</option>
+             {% for genre in genres %}
+            <option value="{{genre.genre_name}}">{{genre.genre_name}}</option>
+            {% endfor %}
          </select>
       </div>
       <div class="form-group">

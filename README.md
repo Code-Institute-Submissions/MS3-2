@@ -4,8 +4,19 @@ Minimalist Reading is a web application created for my Milestone Project Three a
 The project was inspired by an article posted on['The School Of Life'](https://www.theschooloflife.com/thebookoflife/how-to-read-fewer-books/)
 
 
-Minimalist Reading is designed to be a responsive and accessible web application , making it easy to navigate for potential users on a range of devices.
-The project purpose is to allow the user share their favourite book with the community while also providing quality book recommendations.  
+Minimalist Reading is designed to be a responsive and accessible web application, making it easy to navigate for potential users on a range of devices.
+
+### Project Purpose 
+
+  **Build a book review and recommendation site**
+
+1. External user’s goal:
+   Find books they would like to read.
+
+2. Site owner's goal:
+   Earn money on each book purchased via a link from the site.
+
+
 [View the website here](https://minimalist-reading-ms3.herokuapp.com)
 
 
@@ -40,7 +51,7 @@ The project purpose is to allow the user share their favourite book with the com
         -   The image of a girl reading a book with a sunset backdrop is designed to reflect the minimalist aesthetic which ties in        with the purpose of the site.
 
 *   ### Wireframes
-    - I drew the Wireframes for this project as I find drawing them allows for more detailed notes as well as being a more efficient      use of time.
+    -   I drew the Wireframes for this project as I find drawing them allows for more detailed notes as well as being a more efficient     use of time.
 
     -   Home Page Wireframe - [View](https://github.com/jmurrii/MS3/blob/master/static/img/wireframe-index.jpg)
 
@@ -126,7 +137,7 @@ The project purpose is to allow the user share their favourite book with the com
 - A User Login System would open up the possibility of users being able to login and edit their uploads securely.
 
  # Chart System
-- When enough users have submitted books to the site I would like to implement a chart system recording the most popular books using    Javascript.  This would enhance the user experience and make the site more useful.
+- When enough users have submitted books to the site I would like to implement a chart system recording the most popular books. This     would enhance the user experience and make the site more useful.
 
  # Upload Image with Book Submissions
 - Providing the possibility to upload an image/link to the book cover would make the site more visually appealing.

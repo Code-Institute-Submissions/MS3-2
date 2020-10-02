@@ -1,9 +1,13 @@
+""" Import the os and all relevant libraries"""
+
 import os
 from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 if os.path.exists("env.py"):
     import env
+
+""" Create an instance of Flask """
 
 
 app = Flask(__name__)
@@ -12,10 +16,15 @@ app.config["MONGO_DBNAME"] = 'user_uploads'
 app.config["MONGO_URI"] = os.getenv('MONGO_URI')
 mongo = PyMongo(app)
 
+""" index() renders our "index.html" homepage """
+
 
 @app.route('/')
 def index():
     return render_template("index.html")
+
+
+""" about() renders our "about.html" page """
 
 
 @app.route('/about')
@@ -23,19 +32,24 @@ def about():
     return render_template("about.html", page_title="About")
 
 
+""" submit() renders our "submit.html" page """
+
+
 @app.route('/submit')
 def submit():
-    return render_template("submit.html", page_title="Submit")
+    return render_template("submit.html", page_title="Submit",
+        genres=mongo.db.genres.find())
 
 
-""" Retrieves all the 'books' from our MongoDB and
+""" browse() retrieves all the 'books' from our MongoDB and
 displays them on browse.html"""
 
 
 @app.route('/browse')
 def browse():
     return render_template("browse.html", page_title="Browse",
-                           books=mongo.db.books.find())
+                           books=mongo.db.books.find(),
+                           genres=mongo.db.genres.find())
 
 
 """ insert_book function runs when the submit button is clicked.
@@ -51,10 +65,18 @@ def insert_book():
     books.insert_one(request.form.to_dict())
     return redirect(url_for('browse'))
 
-@app.route('/edit_book<book_id>')
+
+""" On pressing the 'Edit' button on browse.html,
+the edit_book function brings the user to 'editbook.html
+where they can edit previously added data
+"""
+
+
+@app.route('/edit_book/<book_id>')
 def edit_book(book_id):
-    the_book =  mongo.db.tasks.find_one({"_id": ObjectId(book_id)})
-    return render_template('editbook.html', book=the_book)
+    the_book = mongo.db.books.find_one({"_id": ObjectId(book_id)})
+    all_genres = mongo.db.genres.find()
+    return render_template('editbook.html', book=the_book, genre=all_genres)
 
 
 """ The delete_book function allows the user completely
@@ -66,6 +88,8 @@ def delete_book(book_id):
     mongo.db.books.remove({'_id': ObjectId(book_id)})
     return redirect(url_for('browse'))
 
+
+""" Setting up our IP Address and Port number"""
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
