@@ -7,13 +7,11 @@
    <div class="card" style="width: 18rem;">
       <div class="card-body">
          <a href="https://www.bookdepository.com/" target="_blank" class="card-link py-3"><h4 class="card-title" id="title">{{book.book_name}}</h4></a>
-         <h5 class="card-subtitle mb-2 py-2" id="author">{{book.author_name}}</h5>
-         {% for genre in genres %}
-         <h6 class="card-subtitle mb-2 pt-2 text-muted" id="genre">{{genre.genre_name}}</h6>
-         {% endfor %}
-         <p class="card-text" id="blurb">"{{book.summary}}"</p>
-         <h6 class="card-subtitle mb-2" id="user">{{book.added_by}}</h6>
-         <a href="https://www.bookdepository.com/" target="_blank" class="card-link"><small class="text-muted text-center mb-4 d-block" id="purchase">click to buy</small></a>
+        <h5 class="card-subtitle mb-2 py-2" id="author">{{book.author_name}}</h5>
+        <h6 class="card-subtitle mb-2 pt-2 text-muted" id="genre">{{book.genre_name}}</h6>
+        <p class="card-text" id="blurb">"{{book.summary}}"</p>
+        <h6 class="card-subtitle mb-2" id="user">{{book.added_by}}</h6>
+        <a href="https://www.bookdepository.com/" target="_blank" class="card-link"><small class="text-muted text-center mb-4 d-block" id="purchase">click to buy</small></a>
          <button><a href="{{url_for('edit_book', book_id=book._id)}}" class="card-link">Edit</a></button>
          <button><a href="{{url_for('delete_book', book_id=book._id)}}" class="card-link">Delete</a></button>
 

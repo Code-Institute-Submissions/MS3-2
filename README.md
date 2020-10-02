@@ -6,6 +6,10 @@ The project was inspired by an article posted on['The School Of Life'](https://w
 
 Minimalist Reading is designed to be a responsive and accessible web application, making it easy to navigate for potential users on a range of devices.
 
+Click the link below to run my project in the live environment:
+
+[Minimalist Reading](https://minimalist-reading-ms3.herokuapp.com/)
+
 ### Project Purpose 
 
   **Build a book review and recommendation site**
@@ -15,9 +19,6 @@ Minimalist Reading is designed to be a responsive and accessible web application
 
 2. Site owner's goal:
    Earn money on each book purchased via a link from the site.
-
-
-[View the website here](https://minimalist-reading-ms3.herokuapp.com)
 
 
 ## User Experience (UX)
@@ -34,6 +35,7 @@ Minimalist Reading is designed to be a responsive and accessible web application
 
         1. As a Returning User, I want to check to see if there are any newly added book recommendations.
         2. As a Returning User, I want to check to see if there are any newly added features to the site.
+        3.  edit delete
 
      -   #### Site Owner Goals
         
@@ -42,7 +44,7 @@ Minimalist Reading is designed to be a responsive and accessible web application
 
 -   ### Design
     -   #### Colour Scheme
-        -   The two main colours used throughout the site are white, grey and black.
+        -   The three main colours used throughout the site are white, grey and black.
         -   The site is based on the ideas of Minimalism and so a simple colour pallette was chosen to keep things crisp and clean.
     -   #### Typography
         -   Clean, modern and minimalist.
@@ -65,7 +67,23 @@ Minimalist Reading is designed to be a responsive and accessible web application
 
 -   Responsive on all device sizes
 
--   Interactive elements
+-   submit
+
+- add/edit delete
+
+-   about
+
+### Future Features 
+
+ # Login System
+- A User Login System would open up the possibility of users being able to login and edit their uploads securely.
+
+ # Chart System
+- When enough users have submitted books to the site I would like to implement a chart system recording the most popular books. This     would enhance the user experience and make the site more useful.
+
+ # Upload Image with Book Submissions
+- Providing the possibility to upload an image/link to the book cover would make the site more visually appealing.
+
 
 
 ## Technologies Used
@@ -127,21 +145,7 @@ Minimalist Reading is designed to be a responsive and accessible web application
     1. As a site owner I want to earn money on each book purchased via a link from the site.
 
        1. Building up a community of people passionate about books and providing a space where they can share recommendations could       lead to an opportunity to affiliate with some online book store.
-
-   
-
-
-### Features Left to Implement
-
- # Login System
-- A User Login System would open up the possibility of users being able to login and edit their uploads securely.
-
- # Chart System
-- When enough users have submitted books to the site I would like to implement a chart system recording the most popular books. This     would enhance the user experience and make the site more useful.
-
- # Upload Image with Book Submissions
-- Providing the possibility to upload an image/link to the book cover would make the site more visually appealing.
-
+ 
 
 ### Further Testing
 
@@ -183,18 +187,6 @@ Click the link below to run my project in the live environment:
 
 [Minimalist Reading](https://minimalist-reading-ms3.herokuapp.com/)
 
-
-### GitHub Pages
-
-The project was deployed to GitHub Pages using the following steps...
-
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
-5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
 
 ### Forking the GitHub Repository
 

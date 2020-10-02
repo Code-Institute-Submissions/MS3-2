@@ -38,11 +38,11 @@ def about():
 @app.route('/submit')
 def submit():
     return render_template("submit.html", page_title="Submit",
-        genres=mongo.db.genres.find())
+                           genres=mongo.db.genres.find())
 
 
 """ browse() retrieves all the 'books' from our MongoDB and
-displays them on browse.html"""
+displays them on browse.html """
 
 
 @app.route('/browse')
@@ -61,6 +61,11 @@ can view their upload and the rest of the uploads to the site.
 
 @app.route('/insert_book', methods=['POST'])
 def insert_book():
+    """ insert_book function runs when the submit button is clicked.
+    It converts info to a dictionary and adds it to the DB.
+    It then redirects the user to the browse.html page where they
+    can view their upload and the rest of the uploads to the site.
+    """
     books = mongo.db.books
     books.insert_one(request.form.to_dict())
     return redirect(url_for('browse'))
@@ -89,7 +94,7 @@ def delete_book(book_id):
     return redirect(url_for('browse'))
 
 
-""" Setting up our IP Address and Port number"""
+""" Setting up our IP Address and Port number """
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
