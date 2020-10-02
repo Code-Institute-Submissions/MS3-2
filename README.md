@@ -5,6 +5,7 @@ The project was inspired by an article posted on['The School Of Life'](https://w
 
 
 Minimalist Reading is designed to be a responsive and accessible web application , making it easy to navigate for potential users on a range of devices.
+The project purpose is to allow the user share their favourite book with the community while also providing quality book recommendations.  
 [View the website here](https://minimalist-reading-ms3.herokuapp.com)
 
 
@@ -15,7 +16,7 @@ Minimalist Reading is designed to be a responsive and accessible web application
     -   #### First Time Visitor Goals
 
         1. As a First Time Visitor, I want to easily understand the main purpose of the site.
-        2. As a First Time Visitor, I want to be able to easily navigate the site.
+        2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
         3. As a First Time Visitor, I want to locate the social media links to stay connected with the site.
 
     -   #### Returning User Goals
@@ -25,27 +26,29 @@ Minimalist Reading is designed to be a responsive and accessible web application
 
      -   #### Site Owner Goals
         
-        1. Earn money on each book purchased via a link from the site.
+        1. As a site owner I want to earn money on each book purchased via a link from the site.
+
 
 -   ### Design
     -   #### Colour Scheme
         -   The two main colours used throughout the site are white, grey and black.
         -   The site is based on the ideas of Minimalism and so a simple colour pallette was chosen to keep things crisp and clean.
     -   #### Typography
-        -   ????????????????????????
+        -   Clean, modern and minimalist.
     -   #### Imagery
         -   The main image for the site is a large,background hero image.
-        -   The image of a girl reading a book with a sunset backdrop is designed to reflect the minimalist aesthetic which ties in with -      the purpose of the site.
+        -   The image of a girl reading a book with a sunset backdrop is designed to reflect the minimalist aesthetic which ties in        with the purpose of the site.
 
 *   ### Wireframes
+    - I drew the Wireframes for this project as I find drawing them allows for more detailed notes as well as being a more efficient      use of time.
 
-    -   Home Page Wireframe - [View](https://github.com/)
+    -   Home Page Wireframe - [View](https://github.com/jmurrii/MS3/blob/master/static/img/wireframe-index.jpg)
 
-    -   Mobile Wireframe - [View](https://github.com/)
+    -   Mobile Wireframe - [View](https://github.com/jmurrii/MS3/blob/master/static/img/wireframe-mobile.jpg)
 
-    -   Submit Page Wireframe - [View](https://github.com/)
+    -   Submit Page Wireframe - [View](https://github.com/jmurrii/MS3/blob/master/static/img/wireframe-submit.jpg)
 
-    -   Browse Page Wireframe - [View](https://github.com/)
+    -   Browse Page Wireframe - [View](https://github.com/jmurrii/MS3/blob/master/static/img/wireframe-browse.jpg)
 
 ## Features
 
@@ -56,11 +59,12 @@ Minimalist Reading is designed to be a responsive and accessible web application
 
 ## Technologies Used
 
-- Design: Photoshop, Logomakr.com, GoogleFonts, FontAwesome
+- Design: Photoshop, Logomakr, GoogleFonts, FontAwesome
 - Frontend: HTML, CSS, JavaScript, Bootstrap, 
-- Backend: Python, Flask, Jinja, 
+- Backend: Python, Flask, PyMongo, Jinja, 
 - Database: MongoDB
 - Hosting: Heroku
+- Version Control: Git, GitHub
 
 ## Testing
 
@@ -77,67 +81,55 @@ Minimalist Reading is designed to be a responsive and accessible web application
 
     1. As a First Time Visitor, I want to easily understand the main purpose of the site.
 
-        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with Text.
-        2. The main points are made immediately with the hero image
-        3. The user has two options, click the call to action buttons or scroll down, both of which will lead to the same place, to learn more about the organisation.
+        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page      of their choice. 
+        2. Underneath the Hero Image the site's philosophy is written in clear unobstructed font.
+        3. How to use the site is then condensed into three easy to follow cards.
 
     2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
 
-        1. The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
-        2. At the bottom of the first 3 pages there is a redirection call to action to ensure the user always has somewhere to go and doesn't feel trapped as they get to the bottom of the page.
-        3. On the Contact Us Page, after a form response is submitted, the page refreshes and the user is brought to the top of the page where the navigation bar is.
+        1. The site has a clear, simple Navbar fixed to the top of each page.  This makes it easy for the user to navigate to any destination on the site at any time.
+        2. The main cards on the homepage also provide links to the other pages on the site giving the user more options.
+    
 
-    3. As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to see their following on social media to determine how trusted and known they are.
-        1. Once the new visitor has read the About Us and What We Do text, they will notice the Why We are Loved So Much section.
-        2. The user can also scroll to the bottom of any page on the site to locate social media links in the footer.
-        3. At the bottom of the Contact Us page, the user is told underneath the form, that alternatively they can contact the organisation on social media which highlights the links to them.
+    3.  As a First Time Visitor, I want to locate the social media links to stay connected with the site.
+        
+        1. The user can also scroll to the bottom of any page on the site to locate social media links in the footer.
+       
 
 -   #### Returning Visitor Goals
 
-    1. As a Returning Visitor, I want to find the new programming challenges or hackathons.
+    1. As a Returning User, I want to check to see if there are any newly added book recommendations.
 
-        1. These are clearly shown in the banner message.
-        2. They will be directed to a page with another hero image and call to action.
+        1. New user recommendations are added to the Browse page making it easy for users to search through the database.
+        
 
-    2. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
+    2. As a Returning User, I want to check to see if there are any newly added features to the site.
 
-        1. The navigation bar clearly highlights the "Contact Us" Page.
-        2. Here they can fill out the form on the page or are told that alternatively they can message the organisation on social media.
-        3. The footer contains links to the organisations Facebook, Twitter and Instagram page as well as the organization's email.
-        4. Whichever link they click, it will be open up in a new tab to ensure the user can easily get back to the website.
-        5. The email button is set up to automatically open up your email app and autofill there email address in the "To" section.
+        1. New features such as a user login will be added to the Navbar making it easy to see for returning users.
+        2. The footer contains links to the site's Social Media to keep up to date to what's happening.
+        3. Whichever link they click, it will be open up in a new tab to ensure the user can easily get back to the website.
+       
 
-    3. As a Returning Visitor, I want to find the Facebook Group link so that I can join and interact with others in the community.
-        1. The Facebook Page can be found at the footer of every page and will open a new tab for the user and more information can be found on the Facebook page.
-        2. Alternatively, the user can scroll to the bottom of the Home page to find the Facebook Group redirect card and can easily join by clicking the "Join Now!" button which like any external link, will open in a new tab to ensure they can get back to the website easily.
-        3. If the user is on the "Our Favourites" page they will also be greeted with a call to action button to invite the user to the Facebook group. The user is incentivized as they are told there is a weekly favourite product posted in the group.
 
--   #### Frequent User Goals
+-   #### Site Owner Goals
+        
+    1. As a site owner I want to earn money on each book purchased via a link from the site.
 
-    1. As a Frequent User, I want to check to see if there are any newly added challenges or hackathons.
+       1. Building up a community of people passionate about books and providing a space where they can share recommendations could       lead to an opportunity to affiliate with some online book store.
 
-        1. The user would already be comfortable with the website layout and can easily click the banner message.
-
-    2. As a Frequent User, I want to check to see if there are any new blog posts.
-
-        1. The user would already be comfortable with the website layout and can easily click the blog link
-
-    3. As a Frequent User, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the website or organisation.
-        1. At the bottom of every page their is a footer which content is consistent throughout all pages.
-        2. To the right hand side of the footer the user can see "Subscribe to our Newsletter" and are prompted to Enter their email address.
-        3. There is a "Submit" button to the right hand side of the input field which is located close to the field and can easily be distinguished.
+   
 
 
 ### Features Left to Implement
 
  # Login System
-- A User Login System would open up the possibility of users being able to login and edit their uploads.
+- A User Login System would open up the possibility of users being able to login and edit their uploads securely.
 
  # Chart System
 - When enough users have submitted books to the site I would like to implement a chart system recording the most popular books using    Javascript.  This would enhance the user experience and make the site more useful.
 
- # Upload Image
-- Providing the possibility to upload an image of the book cover would make the site more visually appealing.
+ # Upload Image with Book Submissions
+- Providing the possibility to upload an image/link to the book cover would make the site more visually appealing.
 
 
 ### Further Testing
@@ -152,6 +144,34 @@ Minimalist Reading is designed to be a responsive and accessible web application
 -   Hamburger icon in Navbar stretches over Hero Image on small screens.
 
 ## Deployment
+
+I used GitHub for my version control and Heroku to host the live version of my project. 
+
+
+To deploy my website to Heroku, I used the following steps:
+
+1. Created the app in Heroku.
+2. Run the `snap install --classic heroku` command in the terminal window to instal heroku in my local workspace.
+3. Ran the `heroku login -i` command in the terminal window and entered my credentials to login to Heroku.
+4. Added and committed the files to Git.
+5. Linked the Heroku app as the remote master branch.
+6. Created a requirements.txt file.
+7. Created a Procfile
+8. Ran the `git push heroku master` command in the terminal window to push the app to Heroku.
+9. Ran the `heroku ps:scale web=1` command in the terminal window to run the app in Heroku.
+10. Entered the following Config Var in Heroku:
+
+    ```MONGO_URI : <link to MongoDB>```
+
+
+The app was successfully deployed to Heroku at this stage.
+
+### Live App Link
+
+Click the link below to run my project in the live environment:
+
+[Minimalist Reading](https://minimalist-reading-ms3.herokuapp.com/)
+
 
 ### GitHub Pages
 
@@ -214,13 +234,16 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 -   Format of README.md followed *[this](https://github.com/Code-Institute-Solutions/SampleREADME#code-institute-website)* example.
 
+-   I took much inspiration from this [MS3 project](https://github.com/Pysched/MS3-DM)
+
 ### Media
 
 -   All Images used in the site were taken from [Pexels](https://www.pexels.com/).
+
 -   Favicon created at [Logomakr](https://logomakr.com/).
 
 ### Acknowledgements
 
--   My Mentor Aaoron Sinnott for helpful feedback and advice on what features to include.
+-   My Mentor Aaoron Sinnott for helpful feedback and advice throughout.
 
 -   Tutor support at Code Institute for their support.
